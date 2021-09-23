@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/glasso_background"
+    tools:context=".ui.slideshow.SlideshowFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_above="@+id/next">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/transparent_layout"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/selectDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Date Of Lecture"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:layout_margin="5dp"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/showdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_margin="10dp"
+           android:background="@drawable/transparent_layout">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Select Branch"
+               android:textStyle="bold"
+               android:textColor="@color/text_color"
+               android:layout_margin="5dp"
+               android:textSize="18sp"/>
+
+           <Spinner
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="5dp"
+               android:id="@+id/branch_spinner"/>
+
+
+       </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/transparent_layout">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Year"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:layout_margin="5dp"
+                android:textSize="18sp"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/year_spinner"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/transparent_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Subject"
+            android:textStyle="bold"
+            android:textColor="@color/text_color"
+            android:layout_margin="5dp"
+            android:textSize="18sp"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/spinner"/>
+
+        <TextView
+            android:id="@+id/startTime"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/ic_baseline_access_time_24"
+            android:drawablePadding="4dp"
+            android:padding="4dp"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:hint="Tab To Select Class Start Time"/>
+
+        <TextView
+            android:id="@+id/endTime"
+            android:textStyle="bold"
+            android:padding="4dp"
+            android:layout_margin="5dp"
+            android:drawablePadding="4dp"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/ic_baseline_access_time_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Tab To Select Class End Time"
+            />
+
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/transparent_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Section"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:layout_margin="5dp"
+                android:textSize="18sp"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/sec_spinner"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/transparent_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Lecture"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:layout_margin="5dp"
+                android:textSize="18sp"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/l_Spinner"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/next"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>
